@@ -41,10 +41,12 @@ export default {
     color: #475669;
     font-size: 18px;
     opacity: 0.75;
-    --line-height: 300px;
-    --height:100%;
     margin: 0;
     text-align:center;
+  }
+  .el-carousel__item img{
+    width:100%;
+    height:100%;
   }
 
   .el-carousel__item:nth-child(2n) {
