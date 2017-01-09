@@ -3,7 +3,7 @@
   DESC: 左侧导航文件
 -->
 <template>
-  <el-col :span="8" class="left">
+  <el-col :span="7" class="left">
     <el-menu default-active="2" class="el-menu-vertical-demo" :router="true" @open="handleOpen" @close="handleClose">
       <el-submenu index="1">
         <template slot="title"><i class="el-icon-message"></i>导航一</template>

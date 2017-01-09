@@ -11,7 +11,7 @@
       <!-- 左侧导航手风琴 -->
       <sidebar></sidebar>
       <!-- 右侧内容 -->
-      <el-col :span="16" class="right">
+      <el-col :span="17" class="right">
         <!-- 面包屑 -->
         <my-breadcrumb></my-breadcrumb>
         <!-- 真正的内容,这里使用站位 -->
@@ -53,7 +53,8 @@ export default {
 <style>
   .app{
     height:100%;
-    min-width: 1110px;
+    width: 960px;
+    margin: 0 auto;
   }
   .el-menu{
     border-bottom-right-radius: 0;
@@ -68,15 +69,13 @@ export default {
   }
   .content{
     height:100%;
-    min-width: 1100px;
     min-height: 750px;
-    border:2px solid #324057;
+    border:1px solid #324057;
     border-top:none;
     position: relative;
   }
   .left{
-    min-width: 300px;
-    width:300px;
+    min-width: 240px;
     display:block;
     height:100%;
     background-color: #eff2f7;
@@ -84,15 +83,12 @@ export default {
     left: 0;
   }
   .right{
-    min-width: 800px;
     height:750px;
-    margin-left:5px;
-    margin-right:5px;
+    padding:0px 5px;
     position: absolute;
     right:0;
   }
   .footer{
-    min-width: 960px;
     text-align: center;
     height:30px;
     line-height: 30px;
@@ -126,7 +122,7 @@ export default {
     background-color: #f9fafc;
   }
   .myseparator{
-    padding:10px 0 10px 5px;
+    padding:10px 0px;
   }
   .el-tabs{
     height:700px;

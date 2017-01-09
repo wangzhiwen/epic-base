@@ -21,4 +21,8 @@ export default{
     .none a{
       text-decoration: none;
     }
+    .none img{
+      width:100%;
+      height:100%;
+    }
 </style>
