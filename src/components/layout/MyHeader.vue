@@ -7,7 +7,11 @@
     <el-col :span="24">
       <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" :router="true" @select="handleSelect">
         <div class="leftlogo">
-          <img src="../../assets/logo1.png" alt="logo">
+          <!-- 
+            注意这里的写法，~assets/logo1.png 相当于require('../../assets/logo1.png'),
+            网上说直接写src="../../assets/logo1.png"有时不好用，暂时没发现。
+           -->
+          <img src="~assets/logo1.png" alt="logo">
         </div>
         <div class="rightmenu">
           <el-submenu index="2">
